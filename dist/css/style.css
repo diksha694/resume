@@ -1,0 +1,161 @@
+html, body
+{
+width:100%;
+height:100%;
+background:black;
+}
+
+.newrow
+{
+    background:black;
+    text-align:center;
+    vertical-align:middle;
+    font-size:30px;
+    color:#BF7806;
+    font-family:Trebuchet MS;
+    padding:1em;
+}
+p
+{
+    font-family:sans-serif;
+    font-size:20px;
+    color:#BF7806;
+    text-align:center;
+}
+.slid
+{
+    background:url(3D-Art-HD-Wallpaper.jpg) no-repeat fixed;
+    height:100%;
+    width:100%;
+    padding-top:40px;
+    
+    
+}
+h1
+{
+    text-align:center;
+    color:#BF7806;
+    font-style:bold;
+}
+.big
+{
+    width:100%;
+    height:100%;
+    text-align:center;
+    vertical-align:middle;
+    padding-left:25em;
+}
+
+
+ul.gallery{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.gallery li{
+  display: block;
+  width: 200px; /* width of gallery */
+  height: 50px; /* portion of each gallery image that's shown initially */
+  position: relative;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+ul.gallery li img{
+  position: absolute;
+  width: 100%;
+  border: 10px solid #D8D2A2;
+ -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+	filter: url(#grayscale); 
+  filter: grayscale(1);
+	-webkit-transition: all .5s ease-in-out; /* CSS3 transition setting */
+	-moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+
+ul.gallery li:focus{ /* when a LI receives focus (clicked on) */
+  z-index: 100;
+	outline: none;
+	-webkit-transform: rotate(3deg); /* rotate enlarged LI by 3 degrees */
+	-moz-transform: rotate(3deg);
+	transform: rotate(3deg); 
+	pointer-events: none; /* disable pointer events on enlarged LI so thumbnail(s) beneath it can receive those events */
+}
+
+ul.gallery li:nth-of-type(even):focus{ /* even LIs that received focus */
+	-webkit-transform: rotate(-1deg); /* rotate enlarged LI by -1 degrees instead */
+	-moz-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+ul.gallery li:focus img{
+  -webkit-transform: scale(2) translateX(80%); /* enlarge focused image and move horizontally */
+  -moz-transform: scale(2) translateX(80%);
+  transform: scale(2) translateX(80%);
+  top: 10px; /* shift enlarged image downwards by 10px */
+	outline: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); 
+  -webkit-filter: grayscale(0); /* nullify grayscale effect */
+  filter: none;
+}
+
+ul.gallery li:first-of-type:focus img{ /* first image within list of thumbnails that receives focus */
+  top: 80px; /* move image down by 80px so it's not obscured by top of window edge */
+}
+
+svg{
+	position: absolute;
+	visibility: hidden;
+}
+
+#contact
+{
+    background:url(nature-black-butterfly-hd-background-wallpaper-37910.jpg)  fixed;
+height:100%;
+    width:100%;
+    padding-top:40px;
+}
+
+#intro
+{
+    background:url(IMG_3982.JPG)  fixed no-repeat;
+height:100%;
+    width:100%;
+    padding:40px;
+}
+.images
+{
+     align-content:center;
+     background:url(Black-Wallpaper-HD-Best-Background.jpg)  fixed no-repeat;
+    width:100%;
+    height:100%;
+    padding-top:40px;
+}
+.ach
+{
+    padding-left:17em;
+}
+.c
+{
+    text-align:center;
+    align-content:center;
+}
+.contact_background
+{
+    background:inherit;
+    border-color:transparent;
+}
+.blac
+{
+    background:black;
+   
+}
+a
+{
+    color:#BF7806;
+}
